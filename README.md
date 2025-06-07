@@ -1,24 +1,21 @@
-# rgbcal: RGB LED calibration tool
-Bart Massey 2024
+# Rust Embedded CS510
 
-This tool is designed to find out a decent frame rate and
-maximum RGB component values to produce a white-looking RGB
-of reasonable brightness.
+## Homework 3: RGB Calibration
 
-See below for UI.
+## Student John Eley
 
-**XXX This tool is *mostly* finished! Please wire your
-hardware up (see below), finish it, comment it, and use it
-to find good values. Then document those values in this
-README.**
+## Program Assignment
 
-## Build and Run
-
-Run with `cargo embed --release`. You'll need `cargo embed`, as
-`cargo run` / `probe-rs run` does not reliably maintain a
-connection for printing. See
-https://github.com/probe-rs/probe-rs/issues/1235 for the
-details.
+- Fork https://github.com/pdx-cs-rust-embedded/hw-rgbcal-skeletonLinks to an external site
+- Follow the instructions in the README there to wire up your MB2.
+- Compile and run the code with cargo embed --release to verify that everything is working. You should be able to turn the blue LED brighter and dimmer with the knob.
+- Comment the code with doc comments and internal comments to clarify its function. This is a good way to learn the code.
+- Add the rest of the code as specified in the README.  Comment that too, of course.
+- Do the calibration and put the values in the README.
+- Put one of the following in your submission:
+*(Preferred)* Make a 5-second video of your system in operation.  Call it VIDEO.mpg (or whatever extension is easy to make).
+*(Otherwise)* Take a photo of your wiring. Call it PHOTO.jpg.
+- Submit a ZIP as usual: see below.
 
 ## Wiring
 
@@ -59,8 +56,6 @@ should scan out all three colors. If the frame rate is too
 low, the LED will appear to "blink". If it is too high, it
 will eat CPU for no reason.
 
-I think the frame rate is probably set higher than it needs
-to be right now: it can be tuned lower.
 
 **LED Specifications**
 
